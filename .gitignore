@@ -4,18 +4,12 @@
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
-
-# ignore these plugins
-wp-content/plugins/hello.php
-
-# ignore specific themes
-wp-content/themes/twenty*/
+!wp-content/plugins/es_product_enquiry
 
 # ignore node dependency directories
 node_modules/
+
+.idea/
 
 # ignore log files and databases
 *.log
