@@ -8,25 +8,16 @@ Author:      eSterling (Dan Mahony)
 Author URI:  http://www.esterling.co.uk
 */
 
+require_once('inc/classes/admin.php');
+
 class es_product_enquiry {
 
     public function __construct() {
-        add_action('woocommerce_product_options_general_product_data', [$this, 'es_product_enquiry_checkbox']);
+        // instantiate admin class and set up admin fields
+        $admin = new es_product_enquiry_admin();
     }
 
-    public function es_product_enquiry_checkbox() {
-        echo '<div class="options_group">';
-        woocommerce_wp_checkbox(
-            array(
-                'id'      => 'enquiry_product',
-                'value'   => get_post_meta( get_the_ID(), 'enquiry_product', true ),
-                'label'   => 'Enquiry Product?',
-                'desc_tip' => true,
-                'description' => 'Add to basket will be replaced with an enquiry button if ticked',
-            )
-        );
-        echo '</div>';
-    }
+
 }
 
 $es_product_enquiry = new es_product_enquiry();
