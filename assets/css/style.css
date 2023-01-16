@@ -1,0 +1,15 @@
+.es_enquiry_form_overlay {
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.es_enquiry_form_overlay.active {
+    height: 100vh;
+    width: 100vw;
+}
