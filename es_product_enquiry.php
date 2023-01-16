@@ -9,6 +9,7 @@ Author URI:  http://www.esterling.co.uk
 */
 
 require_once('inc/classes/admin.php');
+require_once('inc/classes/enquiry_post_type.php');
 
 class es_product_enquiry {
 
