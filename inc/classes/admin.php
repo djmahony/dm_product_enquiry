@@ -15,7 +15,7 @@ class es_product_enquiry_admin {
         echo '<div class="options_group">';
         woocommerce_wp_checkbox(
             array(
-                'id'      => 'enquiry_product',
+                'id'      => 'es_enquiry_product',
                 'value'   => get_post_meta( get_the_ID(), 'enquiry_product', true ),
                 'label'   => 'Enquiry Product?',
                 'desc_tip' => true,
