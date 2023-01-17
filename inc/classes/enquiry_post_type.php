@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 class es_enquiry_post_type {
 
     public function __construct() {

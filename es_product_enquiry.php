@@ -8,6 +8,8 @@ Author:      eSterling (Dan Mahony)
 Author URI:  http://www.esterling.co.uk
 */
 
+defined( 'ABSPATH' ) || exit;
+
 require_once('inc/classes/admin.php');
 require_once('inc/classes/enquiry_post_type.php');
 
@@ -107,7 +109,6 @@ class es_product_enquiry {
     }
 
     public function add_enquiry() {
-
 
         try {
             $product = wc_get_product($_POST['product_id']);
