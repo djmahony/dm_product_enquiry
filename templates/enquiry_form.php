@@ -15,6 +15,10 @@
             <input type="text" name="email" />
         </div>
         <div class="es_enquiry_form__input-container">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" />
+        </div>
+        <div class="es_enquiry_form__input-container">
             <label for="enquiry">Enquiry:</label>
             <textarea name="enquiry"></textarea>
         </div>
