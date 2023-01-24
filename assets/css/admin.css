@@ -1,0 +1,15 @@
+#product-enquiry-details .options_group {
+    padding: 0 0 10px 0;
+}
+
+#product-enquiry-details .options_group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#product-enquiry-details label {
+    float: left;
+    width: 150px;
+    padding: 0;
+}

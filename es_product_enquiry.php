@@ -121,6 +121,7 @@ class es_product_enquiry {
                 'post_type' => 'product_enquiry',
                 'meta_input' => [
                     '_enquiry_product_id' => $_POST['product_id'],
+                    '_enquiry_name' => $_POST['name'],
                     '_enquiry_company' => $_POST['company'],
                     '_enquiry_email' => $_POST['email'],
                     '_enquiry_phone' => $_POST['phone']
