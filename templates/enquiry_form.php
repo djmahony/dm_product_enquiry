@@ -28,6 +28,7 @@
         </div>
         <input type="hidden" name="product_id" value="<?php echo $args['id']; ?>" />
         <button class="es_enquiry_form__button" type="submit" form="#es_enquiry_form__form">Send Enquiry</button>
+        <div class="es_loader">Loading...</div>
     </form>
 </div>
 <div class="es_enquiry_form_overlay"></div>
