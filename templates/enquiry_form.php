@@ -11,6 +11,10 @@
             <input type="text" name="name" />
         </div>
         <div class="es_enquiry_form__input-container">
+            <label for="company">Company:</label>
+            <input type="text" name="company" />
+        </div>
+        <div class="es_enquiry_form__input-container">
             <label for="email">Email:</label>
             <input type="text" name="email" />
         </div>

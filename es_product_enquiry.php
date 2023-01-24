@@ -114,12 +114,14 @@ class es_product_enquiry {
             $product = wc_get_product($_POST['product_id']);
 
             $title = $_POST['name'] . ' ' . ' enquiry for ' . $product->get_name();
+
             $post_args = [
                 'post_title' => $title,
                 'post_content' => $_POST['enquiry'],
                 'post_type' => 'product_enquiry',
                 'meta_input' => [
                     '_enquiry_product_id' => $_POST['product_id'],
+                    '_enquiry_company' => $_POST['company'],
                     '_enquiry_email' => $_POST['email'],
                     '_enquiry_phone' => $_POST['phone']
                 ]
